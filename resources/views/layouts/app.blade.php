@@ -32,10 +32,13 @@
                 </header>
             @endif
 
+            <livewire:delivery-history />
+
             <!-- Page Content -->
             <main>
                 {{ $slot }}
             </main>
+           
         </div>
 
         @stack('modals')
