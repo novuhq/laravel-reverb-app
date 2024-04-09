@@ -29,10 +29,10 @@ class PackageSent implements ShouldBroadCast
     /**
      * Get the channels the event should broadcast on.
      *
-     * @return Illuminate\Broadcasting\Channel
+     * @return Illuminate\Broadcasting\PrivateChannel
      */
     public function broadcastOn(): Channel
     {
-        return new Channel('delivery');
+        return new PrivateChannel('delivery');
     }
 }

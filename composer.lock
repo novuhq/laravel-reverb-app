@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d1e3a3c02b6b8010ff012ce4e8eb91e",
+    "content-hash": "3aa44e4205b08c483219b8155697328f",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -2923,6 +2923,82 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.0.2"
             },
             "time": "2024-03-05T20:51:40+00:00"
+        },
+        {
+            "name": "novu/novu-laravel",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/novuhq/novu-laravel.git",
+                "reference": "8b62b07d2c256da81395fdde9dd0048975678902"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/novuhq/novu-laravel/zipball/8b62b07d2c256da81395fdde9dd0048975678902",
+                "reference": "8b62b07d2c256da81395fdde9dd0048975678902",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/support": "~6|~7|~8|^9.0|^10.0|^11.0",
+                "php": "^7.3|^8.0|^8.1",
+                "unicodeveloper/novu": "^1.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "~4|~5|~6|^7.0",
+                "pestphp/pest": "^1.20.0",
+                "sempro/phpunit-pretty-print": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Novu\\Laravel\\NovuServiceProvider"
+                    ],
+                    "aliases": {
+                        "Novu": "Novu\\Laravel\\Facades\\Novu"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Novu\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Novu contributors",
+                    "email": "prosperotemuyiwa@gmail.com",
+                    "homepage": "https://github.com/novuhq/novu-laravel"
+                }
+            ],
+            "description": "Novu for Laravel",
+            "homepage": "https://novu.co",
+            "keywords": [
+                "laravel",
+                "laravel 10",
+                "laravel 11",
+                "laravel 8",
+                "laravel 9",
+                "notifications",
+                "novu",
+                "novu-laravel",
+                "php",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/novuhq/novu-laravel/issues",
+                "source": "https://github.com/novuhq/novu-laravel/tree/1.3.0"
+            },
+            "time": "2024-04-09T04:20:47+00:00"
         },
         {
             "name": "nunomaduro/termwind",
@@ -7055,6 +7131,60 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.2.7"
             },
             "time": "2023-12-08T13:03:43+00:00"
+        },
+        {
+            "name": "unicodeveloper/novu",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/novuhq/novu-php.git",
+                "reference": "9303e8493b98401d061eef5c153cda5c5bb99218"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/novuhq/novu-php/zipball/9303e8493b98401d061eef5c153cda5c5bb99218",
+                "reference": "9303e8493b98401d061eef5c153cda5c5bb99218",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.5.7|^7.4.4",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.2.1",
+                "pestphp/pest": "^1.20.0",
+                "phpstan/phpstan": "^1.1.1",
+                "symfony/var-dumper": "^5.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Novu\\SDK\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Prosper Otemuyiwa",
+                    "email": "prosperotemuyiwa@gmail.com"
+                }
+            ],
+            "description": "The Novu PHP SDK",
+            "keywords": [
+                "infrastructure",
+                "notifications",
+                "novu",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/novuhq/novu-php/issues",
+                "source": "https://github.com/novuhq/novu-php/tree/1.2.0"
+            },
+            "time": "2024-01-08T12:51:30+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

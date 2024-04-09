@@ -13,9 +13,12 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script src="https://novu-web-component.netlify.app/index.js" type="text/javascript" defer></script>
+        
 
         <!-- Styles -->
         @livewireStyles
+        
     </head>
     <body class="font-sans antialiased">
         <x-banner />
@@ -25,9 +28,17 @@
 
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
+
+                
+            <header class="bg-white dark:bg-gray-800 shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+                        {{ $header }}  
+                    </div>
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        <x-notification-center app-id="MavBpIkktq7-" 
+                                    subscriber-id="{{ auth()->user()->id }}" 
+                                    style="display: inline-flex;">
+                        </x-notification-center>
                     </div>
                 </header>
             @endif
